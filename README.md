@@ -4,9 +4,7 @@ In the field of dynamic system identification, where the information about the u
 
 In discrete time, single input: $x(n)$ - single output: $y(n)$ relation of a stable nonlinear time invariant dynamic system is given by the discrete time Volterra series, where $k(n)$ represents the Volterra kernel, as:
 
-\begin{equation}
-    y(n)=k_{0}+\sum_{m_{1}=0}^{M_{0}-1}{k_{1}(m_{1})x(n-m_{1})+\sum_{m_{1}=0}^{M_{1}-1}\sum_{m_{2}=0}^{M_{2}-1}{k_{2}(m_{1},m_{2})x(n-m_{1})x(n-m_{2})+\dots}
-\end{equation}
+<img src="https://latex.codecogs.com/gif.latex?y(n)=k_{0}&plus;\sum_{m_{1}=0}^{M_{0}-1}{k_{1}(m_{1})x(n-m_{1})}&plus;\sum_{m_{1}=0}^{M_{1}-1}\sum_{m_{2}=0}^{M_{2}-1}{k_{2}(m_{1},m_{2})x(n-m_{1})x(n-m_{2})&plus;\dots}" title="y(n)=k_{0}+\sum_{m_{1}=0}^{M_{0}-1}{k_{1}(m_{1})x(n-m_{1})}+\sum_{m_{1}=0}^{M_{1}-1}\sum_{m_{2}=0}^{M_{2}-1}{k_{2}(m_{1},m_{2})x(n-m_{1})x(n-m_{2})+\dots}" />
 
 In our system identification, where we use order (P) 2 Volterra series with $M_{0}=M_{1}=M_{2}$ and the constant term $k_{0}$ is taken to 0, we can rewrite this as,
 \begin{equation}
