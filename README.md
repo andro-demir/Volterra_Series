@@ -6,12 +6,12 @@ In discrete time, single input: <img src="https://latex.codecogs.com/gif.latex?x
 
 <img src="https://latex.codecogs.com/gif.latex?y(n)=k_{0}&plus;\sum_{m_{1}=0}^{M_{0}-1}{k_{1}(m_{1})x(n-m_{1})}&plus;\sum_{m_{1}=0}^{M_{1}-1}\sum_{m_{2}=0}^{M_{2}-1}{k_{2}(m_{1},m_{2})x(n-m_{1})x(n-m_{2})&plus;\dots}" title="y(n)=k_{0}+\sum_{m_{1}=0}^{M_{0}-1}{k_{1}(m_{1})x(n-m_{1})}+\sum_{m_{1}=0}^{M_{1}-1}\sum_{m_{2}=0}^{M_{2}-1}{k_{2}(m_{1},m_{2})x(n-m_{1})x(n-m_{2})+\dots}" />
 
-In our system identification, where we use order (P) 2 Volterra series with <img src="https://latex.codecogs.com/gif.latex?$M_{0}=M_{1}=M_{2}$" title="$M_{0}=M_{1}=M_{2}$" /> and the constant term <img src="https://latex.codecogs.com/gif.latex?$k_{0}$" title="$k_{0}$" /> is taken to 0, we can rewrite this as,
+In our system identification, where we use order <img src="https://latex.codecogs.com/gif.latex?$P$" title="$P$" /> 2 Volterra series with <img src="https://latex.codecogs.com/gif.latex?$M_{0}=M_{1}=M_{2}$" title="$M_{0}=M_{1}=M_{2}$" /> and the constant term <img src="https://latex.codecogs.com/gif.latex?$k_{0}$" title="$k_{0}$" /> is taken to 0, we can rewrite this as,
 
 <img src="https://latex.codecogs.com/gif.latex?y(n)=\sum_{d=1}^{P=2}\sum_{m_{1},\dots,m_{d}=0}^{M-1}k(m_{1},\dots,m_{d})\prod_{i=1}^{d}{x(n-m_{i})}" title="y(n)=\sum_{d=1}^{P=2}\sum_{m_{1},\dots,m_{d}=0}^{M-1}k(m_{1},\dots,m_{d})\prod_{i=1}^{d}{x(n-m_{i})}" />
 
 At each order of nonlinearity, Volterra kernels describe the dynamics of the system and constitute a canonical representation of the nonlinear dynamic system. 
 
-The main challenge of Volterra models is the exponentially growing number of kernel coefficients as the model order increases. An order $P$ Volterra model with $M$ memory terms, has $\sum_{d=0}^{P}{M^{d}}$ parameters to estimate. For multiple input multiple output dynamic system, the numbers of parameters to estimate increases to $\sum_{d=0}^{P}{(vM)^{d}}$, where $v$ denotes the number of inputs.
+The main challenge of Volterra models is the exponentially growing number of kernel coefficients as the model order increases. An order <img src="https://latex.codecogs.com/gif.latex?$P$" title="$P$" /> Volterra model with $M$ memory terms, has <img src="https://latex.codecogs.com/gif.latex?$\sum_{d=0}^{P}{M^{d}}$" title="$\sum_{d=0}^{P}{M^{d}}$" /> parameters to estimate. For multiple input multiple output dynamic system, the numbers of parameters to estimate increases to <img src="https://latex.codecogs.com/gif.latex?$\sum_{d=0}^{P}{(vM)^{d}}$" title="$\sum_{d=0}^{P}{(vM)^{d}}$" />, where <img src="https://latex.codecogs.com/gif.latex?$v$" title="$v$" /> denotes the number of inputs.
 
 One way to simplify kernel estimation is through expanding them on a orthogonal Laguerre basis. Once the kernels are estimated, Principal Dynamic Mode (PDM) can be used to characterize and explain the dynamics of the underlying nonlinear dynamic system. 
