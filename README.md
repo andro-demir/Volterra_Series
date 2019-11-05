@@ -7,6 +7,7 @@ In discrete time, single input: $x(n)$ - single output: $y(n)$ relation of a sta
 <img src="https://latex.codecogs.com/gif.latex?y(n)=k_{0}&plus;\sum_{m_{1}=0}^{M_{0}-1}{k_{1}(m_{1})x(n-m_{1})}&plus;\sum_{m_{1}=0}^{M_{1}-1}\sum_{m_{2}=0}^{M_{2}-1}{k_{2}(m_{1},m_{2})x(n-m_{1})x(n-m_{2})&plus;\dots}" title="y(n)=k_{0}+\sum_{m_{1}=0}^{M_{0}-1}{k_{1}(m_{1})x(n-m_{1})}+\sum_{m_{1}=0}^{M_{1}-1}\sum_{m_{2}=0}^{M_{2}-1}{k_{2}(m_{1},m_{2})x(n-m_{1})x(n-m_{2})+\dots}" />
 
 In our system identification, where we use order (P) 2 Volterra series with $M_{0}=M_{1}=M_{2}$ and the constant term $k_{0}$ is taken to 0, we can rewrite this as,
+
 <img src="https://latex.codecogs.com/gif.latex?y(n)=\sum_{d=1}^{P=2}\sum_{m_{1},\dots,m_{d}=0}^{M-1}k(m_{1},\dots,m_{d})\prod_{i=1}^{d}{x(n-m_{i})}" title="y(n)=\sum_{d=1}^{P=2}\sum_{m_{1},\dots,m_{d}=0}^{M-1}k(m_{1},\dots,m_{d})\prod_{i=1}^{d}{x(n-m_{i})}" />
 
 At each order of nonlinearity, Volterra kernels describe the dynamics of the system and constitute a canonical representation of the nonlinear dynamic system. 
