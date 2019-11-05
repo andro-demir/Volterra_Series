@@ -1,4 +1,4 @@
-# Design and implementation of order 2 and 3 Volterra series for time series prediction
+# Design and Implementation of Order 2 and 3 Volterra Series for Time Series Prediction
 
 In the field of dynamic system identification, where the information about the underlying dynamic system model is absent, modelling nonlinear dynamics in a nonparametric way with Volterra series is a common approach. Volterra series is similar to Taylor series in structure, but also adds the benefit of capturing memory effects. 
 
