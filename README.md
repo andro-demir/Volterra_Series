@@ -2,7 +2,7 @@
 
 In the field of dynamic system identification, where the information about the underlying dynamic system model is absent, modelling nonlinear dynamics in a nonparametric way with Volterra series is a common approach. Volterra series is similar to Taylor series in structure, but also adds the benefit of capturing memory effects. 
 
-In discrete time, single input: $x(n)$ - single output: $y(n)$ relation of a stable nonlinear time invariant dynamic system is given by the discrete time Volterra series, where $k(n)$ represents the Volterra kernel, as:
+In discrete time, single input: <img src="https://latex.codecogs.com/gif.latex?x(n)" title="x(n)" /> - single output: $y(n)$ relation of a stable nonlinear time invariant dynamic system is given by the discrete time Volterra series, where $k(n)$ represents the Volterra kernel, as:
 
 <img src="https://latex.codecogs.com/gif.latex?y(n)=k_{0}&plus;\sum_{m_{1}=0}^{M_{0}-1}{k_{1}(m_{1})x(n-m_{1})}&plus;\sum_{m_{1}=0}^{M_{1}-1}\sum_{m_{2}=0}^{M_{2}-1}{k_{2}(m_{1},m_{2})x(n-m_{1})x(n-m_{2})&plus;\dots}" title="y(n)=k_{0}+\sum_{m_{1}=0}^{M_{0}-1}{k_{1}(m_{1})x(n-m_{1})}+\sum_{m_{1}=0}^{M_{1}-1}\sum_{m_{2}=0}^{M_{2}-1}{k_{2}(m_{1},m_{2})x(n-m_{1})x(n-m_{2})+\dots}" />
 
